@@ -1,0 +1,91 @@
+@use '../mixins' as *;
+
+.hero {
+    position: relative;
+    height: 800px;
+    width: 100%;
+    display: flex;
+
+    @include for-tablet-landscape-down {
+        height: 600px;
+    }
+
+    @include for-phone-only {
+        height: 400px;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__text {
+        position: absolute;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: var(--color-white);
+        gap: var(--spacing-m);
+
+        padding: 0 var(--spacing-xxxl);
+
+        @include for-big-desktop-down {
+            padding: 0 var(--spacing-xxl);
+        }
+
+        @include for-desktop-down {
+            padding: 0 var(--spacing-xl);
+        }
+
+        @include for-tablet-landscape-down {
+            padding: 0 var(--spacing-l);
+        }
+
+        h1 {
+            font-weight: 900;
+            font-size: 8rem;
+        }
+
+        p {
+            margin: 0;
+            font-size: 4rem;
+            font-weight: 300;
+        }
+
+        @include for-tablet-landscape-down {
+            h1 {
+                font-size: 6rem;
+            }
+
+            p {
+                font-size: 3rem;
+            }
+        }
+
+        @include for-phone-only {
+            h1 {
+                font-size: 5rem;
+            }
+
+            p {
+                font-size: 2.4rem;
+            }
+        }
+    }
+
+
+    &__divider {
+        height: 1px;
+        width: 600px;
+        background: linear-gradient(to right,
+                rgba(255, 255, 255, 0.6),
+                transparent);
+
+
+        @include for-tablet-landscape-down {
+            width: 100%;
+        }
+    }
+}

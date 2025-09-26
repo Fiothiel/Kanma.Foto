@@ -1,0 +1,51 @@
+﻿@use "../mixins" as *;
+
+.header {
+  width: 100%;
+  color: var(--color-text-on-brand);
+  background-color: var(--color-bg-brand);
+  padding: var(--spacing-s) 0;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  nav {
+    max-width: var(--content-wide-max-width);
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-l);
+    margin: auto;
+    width: 100%;
+    padding: 0 var(--spacing-l);
+
+    @include for-phone-only {
+      gap: var(--spacing-m);
+      justify-content: space-between;
+    }
+  }
+
+  &__link {
+    color: inherit;
+    font-size: var(--font-size-nav);
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.8rem 0.4rem;
+    display: inline-block;
+    transition: color var(--transition-fast), border-color var(--transition-fast);
+    border-bottom: 2px solid transparent;
+
+    &:hover,
+    &:focus-visible {
+      color: var(--color-interactive);
+      border-bottom-color: var(--color-interactive);
+      outline: none;
+    }
+
+    &--active {
+      color: var(--color-interactive);
+      border-bottom-color: var(--color-interactive);
+    }
+  }
+}

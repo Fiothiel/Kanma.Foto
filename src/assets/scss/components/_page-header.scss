@@ -1,0 +1,19 @@
+.page-header {
+  max-height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-xl) 0;
+  background-color: var(--color-moss-600);
+  border-bottom: var(--border-width-s) solid rgba(227, 225, 220, 0.25);
+  color: var(--color-white);
+
+  &--bright {
+    /* background-color: ; */
+  }
+
+  &__inner {
+    text-align: center;
+  }
+}

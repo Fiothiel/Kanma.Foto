@@ -1,0 +1,35 @@
+:root {
+    /* Neutrals */
+    --color-white: #ffffff;
+    --color-black: #0f0f0f;
+
+    --color-stone-50: #f5f4f0;
+    --color-stone-200: #e3e1dc;
+    --color-stone-600: #6b6b6b;
+    --color-stone-700: #4f4f4b;
+
+    /* Greens */
+    --color-sage-100: #dfe5d8;
+    --color-sage-300: #b8c4ad;
+    --color-moss-600: #354030;
+
+    /* Accents */
+    --color-lichen-200: #dfe8b3;
+    --color-lichen-300: #c6d46f;
+    --color-lichen-400: #a9bf3f;
+
+    /* UI roles */
+    --color-bg-page: var(--color-stone-50);
+    --color-bg-brand: var(--color-moss-600);
+    --color-bg-surface: var(--color-white);
+    --color-bg-muted-surface: var(--color-sage-100);
+
+    --color-text-primary: var(--color-black);
+    --color-text-secondary: var(--color-stone-700);
+    --color-text-on-brand: var(--color-sage-100);
+
+    --color-border-soft: var(--color-stone-200);
+    --color-border-brand: var(--color-sage-300);
+
+    --color-interactive: var(--color-lichen-400);
+}

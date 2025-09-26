@@ -1,0 +1,7 @@
+@use '../mixins' as *;
+
+.page {
+  .rich-text {
+    @include text-content;
+  }
+}

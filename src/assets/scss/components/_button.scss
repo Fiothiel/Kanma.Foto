@@ -1,0 +1,20 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 180ms ease;
+
+  &--lined {
+    background-color: transparent;
+    border: 1px solid var(--color-sage-100);
+    color: var(--color-white);
+    border-radius: var(--radius-s);
+    padding: var(--spacing-s) var(--spacing-base);
+
+    &:hover {
+      border-color: var(--color-lichen-400);
+      color: var(--color-lichen-400);
+      background-color: rgba(169, 191, 63, 0.08);
+    }
+  }
+}

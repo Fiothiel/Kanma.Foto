@@ -1,0 +1,22 @@
+@mixin font-variable($family, $file, $style: normal, $min: 100, $max: 900) {
+  @font-face {
+    font-family: $family;
+    src: url('/fonts/#{$family}/#{$file}.ttf') format('truetype');
+    font-weight: #{$min} #{$max};
+    font-style: $style;
+    font-display: swap;
+  }
+}
+
+/* Inter (variable) */
+@include font-variable('Inter', 'Inter-VariableFont_slnt,wght', normal, 100, 900);
+@include font-variable('Inter', 'Inter-Italic-VariableFont_opsz,wght', italic, 100, 900);
+
+/* Cormorant Garamond (variable) */
+@include font-variable('Cormorant Garamond', 'CormorantGaramond-VariableFont_wght', normal, 300, 700);
+@include font-variable('Cormorant Garamond', 'CormorantGaramond-Italic-VariableFont_wght', italic, 300, 700);
+
+:root {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", serif;
+}
