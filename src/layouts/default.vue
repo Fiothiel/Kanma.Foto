@@ -1,6 +1,6 @@
 <template>
   <div class="kanma">
-    <Hero />
+    <!-- <Hero /> -->
     <main class="kanma__content">
       <NuxtPage/>
     </main>

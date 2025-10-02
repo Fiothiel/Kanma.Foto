@@ -2,7 +2,17 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-  modules: ["@nuxt/image", "@nuxtjs/sitemap"],  
+    modules: [
+    '@nuxt/image',
+    '@nuxtjs/sitemap',
+    [
+      '@storyblok/nuxt',
+      {
+        accessToken: process.env.STORYBLOK_TOKEN,
+        apiOptions: { region: 'eu' }
+      }
+    ]
+  ],
   site: {
     url: process.env.NUXT_PUBLIC_SITE_URL || 'https://kanmafoto.se'
   },
