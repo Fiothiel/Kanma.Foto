@@ -1,0 +1,37 @@
+@mixin font($family, $name, $weight, $style) {
+  @font-face {
+    font-family: $family;
+    src: url('/fonts/#{$family}/#{$name}.ttf') format('truetype');
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap;
+  }
+}
+
+/* Inter (24pt) */
+@include font('Inter', 'Inter_24pt-Thin', 100, normal);
+@include font('Inter', 'Inter_24pt-ThinItalic', 100, italic);
+
+@include font('Inter', 'Inter_24pt-ExtraLight', 200, normal);
+@include font('Inter', 'Inter_24pt-ExtraLightItalic', 200, italic);
+
+@include font('Inter', 'Inter_24pt-Light', 300, normal);
+@include font('Inter', 'Inter_24pt-LightItalic', 300, italic);
+
+@include font('Inter', 'Inter_24pt-Regular', 400, normal);
+@include font('Inter', 'Inter_24pt-Italic', 400, italic);
+
+@include font('Inter', 'Inter_24pt-Medium', 500, normal);
+@include font('Inter', 'Inter_24pt-MediumItalic', 500, italic);
+
+@include font('Inter', 'Inter_24pt-SemiBold', 600, normal);
+@include font('Inter', 'Inter_24pt-SemiBoldItalic', 600, italic);
+
+@include font('Inter', 'Inter_24pt-Bold', 700, normal);
+@include font('Inter', 'Inter_24pt-BoldItalic', 700, italic);
+
+@include font('Inter', 'Inter_24pt-ExtraBold', 800, normal);
+@include font('Inter', 'Inter_24pt-ExtraBoldItalic', 800, italic);
+
+@include font('Inter', 'Inter_24pt-Black', 900, normal);
+@include font('Inter', 'Inter_24pt-BlackItalic', 900, italic);

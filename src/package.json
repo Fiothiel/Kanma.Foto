@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-app",
-  "private": true,
+  "name": "kanma-foto",
   "type": "module",
+  "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -10,28 +10,15 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@emailjs/browser": "^4.4.1",
-    "@nuxt/image": "1.11.0",
-    "@pinia/nuxt": "^0.11.2",
-    "@splidejs/vue-splide": "^0.6.12",
-    "@storyblok/js": "^4.3.0",
-    "@storyblok/nuxt": "^8.1.2",
-    "@storyblok/vue": "^9.3.1",
-    "@vee-validate/i18n": "^4.15.1",
-    "@vee-validate/rules": "^4.15.1",
-    "axios": "^1.11.0",
-    "nuxt": "^4.1.2",
-    "pinia": "^3.0.3",
-    "vee-validate": "^4.15.1",
-    "vue": "^3.5.18",
-    "vue-router": "^4.5.1"
+    "@storyblok/nuxt": "8.0.3",
+    "nuxt": "3.18.1"
+  },
+  "resolutions": {
+    "@nuxt/kit": "3.18.1",
+    "@nuxt/schema": "3.18.1"
   },
   "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610",
   "devDependencies": {
-    "@nuxtjs/sitemap": "^7.4.3",
-    "@types/node": "^24.2.0",
-    "sass": "^1.90.0",
-    "typescript": "^5.9.2",
-    "vite": "^6"
+    "sass-embedded": "^1.97.1"
   }
 }

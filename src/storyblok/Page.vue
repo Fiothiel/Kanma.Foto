@@ -1,13 +1,13 @@
-<script setup lang="ts">
-const { blok } = defineProps<{ blok: any }>()
-</script>
-
 <template>
-  <div>
+  <main class="page" v-editable="blok">
     <StoryblokComponent
-      v-for="child in blok.body"
-      :key="child._uid"
-      :blok="child"
+      v-for="currentBlok in blok.body"
+      :key="currentBlok._uid"
+      :blok="currentBlok"
     />
-  </div>
+  </main>
 </template>
+
+<script setup lang="ts">
+const { blok } = defineProps<{ blok: any }>();
+</script>
