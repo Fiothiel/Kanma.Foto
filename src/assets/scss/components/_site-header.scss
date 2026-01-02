@@ -1,0 +1,17 @@
+.header {
+    width: 100%;
+
+    nav {
+        display: flex;
+        gap: var(--spacing-xl);
+        justify-content: center;
+    }
+
+    color: var(--color-stone-50);
+    background-color: var(--color-moss-600);
+    padding: var(--spacing-m) var(--spacing-m);
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
