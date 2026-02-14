@@ -8,6 +8,7 @@ Architecture
 
 Styling
 - Enforce strict BEM naming in templates and styles.
+- Prefer nested SCSS for component styles (use `&__element` and `&--modifier`).
 - Use CSS variables for tokens (spacing, radii, transitions, theme colors) based on the existing variable setup in:
   - assets/scss/_variables.scss
   - assets/scss/_colors.scss

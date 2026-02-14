@@ -1,0 +1,17 @@
+.page {
+  display: grid;
+  gap: var(--spacing-l);
+}
+
+.page .rich-text {
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin: 0 auto;
+  padding: var(--spacing-xl) var(--spacing-m);
+}
+
+@media (min-width: 48rem) {
+  .page .rich-text {
+    padding: var(--spacing-2xl) var(--spacing-l);
+  }
+}
