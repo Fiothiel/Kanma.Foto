@@ -41,7 +41,7 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_AGREEABLE_SEA_0B10A5F10 }}
           action: "upload"
-          app_location: "/"
+          app_location: "src"
           api_location: ""
           output_location: ".output/public"
           app_build_command: "yarn generate"
@@ -58,4 +58,5 @@ jobs:
         uses: Azure/static-web-apps-deploy@v1
         with:
           action: "close"
+
 
