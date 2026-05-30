@@ -82,13 +82,13 @@
       height: 1px;
       background: linear-gradient(to right,
           transparent,
-          rgba(223, 229, 216, 0.4));
+          rgba(245, 244, 240, 0.4));
     }
 
     &::after {
       background: linear-gradient(to left,
           transparent,
-          rgba(223, 229, 216, 0.4));
+          rgba(245, 244, 240, 0.4));
     }
   }
 }

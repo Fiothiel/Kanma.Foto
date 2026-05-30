@@ -12,7 +12,7 @@
     gap: var(--spacing-xl);
     align-items: center;
     padding-bottom: var(--spacing-l);
-    border-bottom: var(--border-width-s) solid var(--color-border-soft);
+    border-bottom: var(--border-width-s) solid var(--stone-200);
 
     @include for-tablet-landscape-down {
       grid-template-columns: 1fr;
@@ -30,7 +30,7 @@
   }
 
   &__text {
-    color: var(--color-text-secondary);
+    color: var(--stone-700);
 
     :deep(p) {
       margin-top: 0;
@@ -47,8 +47,8 @@
     height: var(--about-portrait-size);
     border-radius: 50%;
     overflow: hidden;
-    border: var(--border-width-s) solid var(--color-stone-200);
-    background-color: var(--color-bg-page);
+    border: var(--border-width-s) solid var(--stone-200);
+    background-color: var(--stone-25);
   }
 
   &__portrait {
@@ -62,7 +62,7 @@
     width: 100%;
     margin: 0 auto;
     padding-bottom: var(--spacing-l);
-    background-color: var(--color-bg-page);
+    background-color: var(--stone-25);
   }
 
   &__contact-heading {

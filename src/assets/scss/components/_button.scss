@@ -6,15 +6,15 @@
 
   &--lined {
     background-color: transparent;
-    border: 1px solid var(--color-sage-100);
+    border: 1px solid var(--stone-200);
     color: var(--color-white);
     border-radius: var(--radius-s);
     padding: var(--spacing-s) var(--spacing-base);
 
     &:hover {
-      border-color: var(--color-lichen-400);
-      color: var(--color-lichen-400);
-      background-color: rgba(169, 191, 63, 0.08);
+      border-color: var(--moss-500);
+      color: var(--moss-500);
+      background-color: rgba(111, 131, 99, 0.08);
     }
   }
 }

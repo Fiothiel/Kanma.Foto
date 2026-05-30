@@ -7,7 +7,7 @@
     text-align: center;
     margin-bottom: var(--spacing-xl);
     padding-bottom: var(--spacing-l);
-    border-bottom: var(--border-width-s) solid rgba(53, 64, 48, 0.15);
+    border-bottom: var(--border-width-s) solid rgba(42, 51, 37, 0.15);
   }
 
   &__title {
@@ -15,7 +15,7 @@
   }
 
   &__intro {
-    color: var(--color-stone-700);
+    color: var(--stone-700);
   }
 
   &__grid {
@@ -57,6 +57,6 @@
 
   &__empty {
     margin: var(--spacing-m) 0 0;
-    color: var(--color-stone-600);
+    color: var(--stone-700);
   }
 }
