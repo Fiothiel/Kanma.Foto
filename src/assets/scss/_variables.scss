@@ -13,6 +13,7 @@
   --border-width-s: 1px;
 
   --font-size-s: 1.4rem;
+  --font-size-m: 1.6rem;
   --font-size-l: 2rem;
   --font-size-xl: 2.6rem;
   --font-size-nav: 1.4rem;
@@ -20,12 +21,13 @@
   --line-height-tight: 1.2;
   --line-height-base: 1.6;
 
+  --transition-slow: 400ms ease;
   --transition-fast: 150ms ease;
 
   --content-max-width: 72rem;
   --content-wide-max-width: 97rem;
 
-  --about-portrait-size: 28rem;
+  --about-portrait-size: 35rem;
   --about-contact-card-min-width: 21rem;
-  --about-contact-icon-size: 3.8rem;
+  --about-contact-icon-size: 2.8rem;
 }

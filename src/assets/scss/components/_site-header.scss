@@ -2,8 +2,8 @@
 
 .header {
   width: 100%;
-  color: var(--color-text-on-brand);
-  background-color: var(--color-bg-brand);
+  color: var(--stone-50);
+  background-color: var(--moss-700);
   padding: var(--spacing-s) 0;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -29,7 +29,7 @@
   &__link {
     color: inherit;
     font-size: var(--font-size-nav);
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     padding: 0.8rem 0.4rem;
     display: inline-block;
@@ -38,14 +38,14 @@
 
     &:hover,
     &:focus-visible {
-      color: var(--color-interactive);
-      border-bottom-color: var(--color-interactive);
+      color: var(--moss-500);
+      border-bottom-color: var(--moss-500);
       outline: none;
     }
 
     &--active {
-      color: var(--color-interactive);
-      border-bottom-color: var(--color-interactive);
+      color: var(--color-white);
+      border-bottom-color: var(--color-white);
     }
   }
 }

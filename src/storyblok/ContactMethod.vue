@@ -16,7 +16,6 @@
         alt=""
         loading="lazy"
       />
-      <span v-else class="contact-method__icon-fallback">+</span>
     </span>
 
     <span class="contact-method__label">{{ label }}</span>

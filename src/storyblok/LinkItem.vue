@@ -2,7 +2,6 @@
   <a class="footer-link" :href="href" :target="target" :rel="rel" v-editable="blok">
     <span class="footer-link__icon" aria-hidden="true">
       <img v-if="iconSrc" class="footer-link__icon-image" :src="iconSrc" alt="" loading="lazy" />
-      <span v-else class="footer-link__icon-fallback">+</span>
     </span>
     <span class="footer-link__label">{{ blok.label }}</span>
   </a>

@@ -2,7 +2,7 @@
   display: inline-flex;
   align-items: center;
   gap: var(--spacing-s);
-  color: var(--color-text-on-brand);
+  color: var(--stone-50);
   text-decoration: none;
   padding: var(--spacing-xs) 0;
   border-bottom: 1px solid transparent;
@@ -10,12 +10,8 @@
 
   &:hover,
   &:focus-visible {
-    color: var(--color-interactive);
-    border-bottom-color: rgba(169, 191, 63, 0.65);
-
-    .footer-link__icon-image {
-      filter: brightness(0) saturate(100%) invert(78%) sepia(23%) saturate(647%) hue-rotate(31deg) brightness(92%) contrast(85%);
-    }
+    color: var(--moss-500);
+    border-bottom-color: var(--moss-500);
   }
 
   &__icon {
@@ -34,11 +30,6 @@
     object-fit: contain;
     filter: brightness(0) saturate(100%) invert(93%) sepia(15%) saturate(274%) hue-rotate(42deg) brightness(95%) contrast(90%);
     transition: filter var(--transition-fast);
-  }
-
-  &__icon-fallback {
-    font-size: var(--font-size-l);
-    line-height: 1;
   }
 
   &__label {

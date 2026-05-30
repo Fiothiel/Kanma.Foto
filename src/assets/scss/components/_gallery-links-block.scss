@@ -2,7 +2,7 @@
 
 .gallery-links-block {
   width: 100%;
-  background-color: var(--color-bg-muted-surface);
+  background-color: var(--stone-100);
   padding: var(--spacing-xl) 0;
 
   &__inner {
@@ -52,7 +52,7 @@
     }
     &:hover {
       transform: translateY(-2px);
-      border-color: var(--color-interactive);
+      border-color: var(--moss-500);
     }
 
     @include for-tablet-landscape-down {
