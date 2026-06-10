@@ -11,7 +11,7 @@
   top: 0;
   z-index: 10;
 
-  nav {
+  &__nav {
     max-width: var(--content-wide-max-width);
     display: flex;
     justify-content: center;
@@ -21,8 +21,56 @@
     padding: 0 var(--spacing-l);
 
     @include for-phone-only {
-      gap: var(--spacing-m);
-      justify-content: space-between;
+      gap: 0;
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+  &__toggle {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    flex-direction: column;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    align-self: flex-end;
+
+    @include for-phone-only {
+      display: inline-flex;
+    }
+  }
+
+  &__toggle-line {
+    width: 1.35rem;
+    height: 2px;
+    background-color: currentColor;
+    border-radius: 999px;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-l);
+
+    @include for-phone-only {
+      display: none;
+      flex-direction: column;
+      gap: 0;
+      width: 100%;
+      padding-top: var(--spacing-s);
+    }
+
+    &--open {
+      @include for-phone-only {
+        display: flex;
+      }
     }
   }
 
@@ -35,6 +83,13 @@
     display: inline-block;
     transition: color var(--transition-fast), border-color var(--transition-fast);
     border-bottom: 2px solid transparent;
+
+    @include for-phone-only {
+      width: 100%;
+      padding: 0.9rem 0;
+      border-bottom-width: 1px;
+      border-bottom-color: rgba(255, 255, 255, 0.18);
+    }
 
     &:hover,
     &:focus-visible {
